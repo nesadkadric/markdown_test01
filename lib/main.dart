@@ -35,19 +35,29 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            MarkdownBody(
-              data: testString,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            MarkdownBody(
-              data: fileText,
-            ),
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              MarkdownBody(
+                data: "# Test \u00a9",
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              MarkdownBody(
+                data: testString,
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              MarkdownBody(
+                data: fileText,
+              ),
+            ],
+          ),
         ),
       ),
     );
