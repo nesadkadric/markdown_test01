@@ -44,6 +44,9 @@ class _AppState extends State<App> {
               MarkdownBody(
                 data: "# Test \u00a9",
               ),
+              MarkdownBody(
+                data: "\u00a9",
+              ),
               SizedBox(
                 height: 40,
               ),
