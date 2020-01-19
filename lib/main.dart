@@ -13,7 +13,7 @@ class _AppState extends State<App> {
   String fileText;
 
   final String testString = """
-# From code \u00a9
+# From variable \u00a9
 \u00a9
 """;
 
